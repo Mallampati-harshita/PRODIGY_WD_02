@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #57C4E5, #D1D646);
+    margin: 0;
+}
+
+.stopwatch {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    transition: all 0.3s ease-in-out;
+}
+
+.display {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.start {
+    background-color: #28a745;
+}
+
+.pause {
+    background-color: #ffc107;
+}
+
+.reset {
+    background-color: #dc3545;
+}
+
+.lap {
+    background-color: #17a2b8;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#lapTimes {
+    list-style: none;
+    padding: 0;
+    color: #333;
+}
+
+#lapTimes li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#lapTimes li:nth-child(odd) {
+    background-color: #e9ecef;
+}
+@media (max-width: 600px) {
+    .stopwatch {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .display {
+        font-size: 2em;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
